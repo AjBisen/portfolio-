@@ -1,0 +1,289 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display: flex;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+  background-color: #1a1a1a;
+  color: white;
+  height: 100vh;
+  width: 220px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  border-left: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #333;
+  border-left: 3px solid #ff9800;
+}
+
+/* ====== MAIN CONTENT ====== */
+.main {
+  margin-left: 220px;
+  padding: 40px;
+  flex: 1;
+}
+
+/* ====== HOME PAGE ====== */
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.devinfo {
+  max-width: 500px;
+}
+
+.hello {
+  font-size: 20px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ff9800;
+}
+
+.moreabout {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.buttons button {
+  padding: 10px 15px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.buttons button.secondary {
+  background-color: #333;
+}
+
+.buttons button:hover {
+  background-color: #e68900;
+}
+
+.devpic img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* ====== MY INTRO PAGE ====== */
+.header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.intro-img img {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 250px;
+  height: auto;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.intro-text h2 {
+  font-size: 28px;
+  color: #ff9800;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.intro-text a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #ff9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.intro-text a:hover {
+  background-color: #e68900;
+}
+
+/* ====== SERVICES PAGE ====== */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service-box h2 {
+  color: #ff9800;
+}
+
+.service-box:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* ====== BLOG PAGE ====== */
+.blogcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blogItem {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.blogItem img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.blogContent h2 {
+  color: #ff9800;
+}
+
+.btn1 {
+  padding: 8px 12px;
+  background: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ====== LOGIN PAGE ====== */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #ff9800;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #e68900;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .infoContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
